@@ -117,10 +117,10 @@ class _LivingRoomState extends State<LivingRoom> {
                       Align(
                         alignment: Alignment.topRight,
                         child: Padding(
-                          padding: EdgeInsets.only(top: 65,right: 8), // Add your desired padding values
+                          padding: EdgeInsets.only(top: 65,right: 8), 
                           child: GestureDetector(
                             onTap: () {
-                              // Show the options dialog when the options button is pressed
+                              
                               showDialog(
                                 context: context,
                                 builder: (BuildContext context) {
@@ -157,14 +157,14 @@ class _LivingRoomState extends State<LivingRoom> {
                                                     actions: [
                                                       TextButton(
                                                         onPressed: () {
-                                                          Navigator.of(context).pop(); // Cancel button
+                                                          Navigator.of(context).pop(); 
                                                         },
                                                         child: Text('Cancel'),
                                                       ),
                                                       TextButton(
                                                         onPressed: () async {
-                                                          Navigator.of(context).pop(); // Close the confirmation dialog
-                                                          await _logout(); // Logout the user
+                                                          Navigator.of(context).pop(); 
+                                                          await _logout(); 
                                                         },
                                                         child: Text('Logout'),
                                                       ),
