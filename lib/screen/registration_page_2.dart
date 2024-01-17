@@ -36,7 +36,7 @@ class UserData {
   UserData._internal();
 
   String firstName = '';
-// Add other user-related data if needed
+
 }
 
 
@@ -62,8 +62,6 @@ class _RegistrationPage2State extends State<RegistrationPage2> {
 
 
   void showError(String message) {
-    // You can implement how you want to display the error message
-    // For example, using a dialog or a SnackBar
     print(message);
   }
 
@@ -159,7 +157,7 @@ class _RegistrationPage2State extends State<RegistrationPage2> {
 
     return Stack(
         children: [
-          // Background Image
+          
           Image.asset(
             "assets/LOGIN9.png",
             fit: BoxFit.cover,
@@ -218,13 +216,13 @@ class _RegistrationPage2State extends State<RegistrationPage2> {
   }
 
   String sha256Hash(String input) {
-    var bytes = utf8.encode(input); // Encode the input string as UTF-8
-    var digest = sha256.convert(bytes); // Calculate the hash
-    return digest.toString(); // Return the hash as a string
+    var bytes = utf8.encode(input); 
+    var digest = sha256.convert(bytes); 
+    return digest.toString(); 
   }
 
   void saveDataToFirebase() {
-    //First letter pre-scripted to introduce the lore
+    
     String generatedLetter1 = "It's Mom! Hope you're settling well in the new neighborhood! Let me know what's happening in your world. I could lend you an ear or two just for you!";
     String generatedLetter2 = "P.S. drop me a reply to let me know you've arrived, I have a lil' surprise for you inside the house.";
 
