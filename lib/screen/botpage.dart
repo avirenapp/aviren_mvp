@@ -25,7 +25,7 @@ class _ChatPageState extends State<ChatPage> {
     typing.add(bot);
     allMessages.insert(0, m);
     setState(() {
-      showLogoAndText = false; // Hide the logo and text
+      showLogoAndText = false; 
     });
     var body = jsonEncode({"email": widget.email, "question": m.text});
     await http.post(
@@ -80,7 +80,7 @@ class _ChatPageState extends State<ChatPage> {
                   CircleAvatar(
                     radius: 50,
                     backgroundImage: AssetImage(
-                      'assets/avirenlogo.png', // Replace with your logo asset path
+                      'assets/avirenlogo.png', 
                     ),
                   ),
                   SizedBox(height: 20),
