@@ -18,7 +18,7 @@ class _ChatPageState extends State<ChatPage> {
 
   List<ChatUser> typing = [];
   List<ChatMessage> allMessages = [];
-  final url = 'https://aviren.pythonanywhere.com/generate';
+  final url = 'REDACTED';
   bool showLogoAndText = true;
 
   getdata(ChatMessage m) async {
