@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "302361832417",
+    "project_id": "aviren-ff51f",
+    "storage_bucket": "aviren-ff51f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302361832417:android:71c4c3deed3178547380a0",
+        "android_client_info": {
+          "package_name": "com.example.flutter1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC80GC3jdeH7ppxvUvVUrvEFwCchCV1Hc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
