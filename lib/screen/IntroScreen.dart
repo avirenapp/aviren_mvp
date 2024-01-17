@@ -26,8 +26,8 @@ class _VideoIntroScreenState extends State<VideoIntroScreen> {
       fullScreenByDefault: true,
       autoPlay: true,
       looping: false,
-      autoInitialize: true, // Set autoInitialize to true
-      showControls: false, // Hide the default controls
+      autoInitialize: true, 
+      showControls: false, 
       materialProgressColors: ChewieProgressColors(
         playedColor: Colors.transparent,
         handleColor: Colors.transparent,
@@ -42,7 +42,7 @@ class _VideoIntroScreenState extends State<VideoIntroScreen> {
 
     _videoPlayerController.addListener(() {
       if (_videoPlayerController.value.position == _videoPlayerController.value.duration) {
-        // Video finished, navigate to the HomeScreen or any other screen
+        
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => LoginPage()),
         );
