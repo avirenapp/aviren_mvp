@@ -48,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    //email.field
+    
     final emailField = TextFormField(
 
       autofocus: false,
@@ -133,13 +133,13 @@ class _LoginPageState extends State<LoginPage> {
 
     return WillPopScope(
         onWillPop: () async {
-      // Handle back button press
-      SystemNavigator.pop(); // Close the app
-      return false; // Return true to allow back button press, false to block it
+      
+      SystemNavigator.pop(); 
+      return false; 
     },
       child : Stack(
         children: [
-          // Background Image
+          
           Image.asset(
             "assets/LOGIN8.png",
             fit: BoxFit.cover,
@@ -225,7 +225,7 @@ class _LoginPageState extends State<LoginPage> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => privacy(), // Replace with your Privacy Policy screen
+                                          builder: (context) => privacy(), 
                                         ),
                                       );
                                     },
@@ -243,7 +243,7 @@ class _LoginPageState extends State<LoginPage> {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => terms(), // Replace with your Privacy Policy screen
+                                          builder: (context) => terms(), 
                                         ),
                                       );
                                     },
@@ -264,9 +264,9 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   String sha256Hash(String input) {
-    var bytes = utf8.encode(input); // Encode the input string as UTF-8
-    var digest = sha256.convert(bytes); // Calculate the hash
-    return digest.toString(); // Return the hash as a string
+    var bytes = utf8.encode(input); 
+    var digest = sha256.convert(bytes); 
+    return digest.toString(); 
   }
 
   void signIn(String email, String password) async {
@@ -275,13 +275,13 @@ class _LoginPageState extends State<LoginPage> {
         await _auth.signInWithEmailAndPassword(
             email: email, password: sha256Hash(password));
 
-        // If login is successful, navigate to HomeScreen
+        
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => HomeScreen(email: emailController.text)),
         );
         Fluttertoast.showToast(msg: "Login Successful");
       } on FirebaseAuthException catch (e) {
-        // Handle specific Firebase authentication exceptions
+        
         if (e.code == 'user-not-found') {
           Fluttertoast.showToast(msg: 'User not found. Please sign up.');
         } else if (e.code == 'wrong-password') {
@@ -290,7 +290,7 @@ class _LoginPageState extends State<LoginPage> {
           Fluttertoast.showToast(msg: 'Error: "Authentication failed. Please check your email and password".');
         }
       } catch (e) {
-        // Handle other unexpected errors
+        
         Fluttertoast.showToast(msg: 'Unexpected error: $e');
       }
     }
