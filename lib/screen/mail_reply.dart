@@ -58,7 +58,7 @@ class _MailReplyState extends State<MailReply> {
         'respondLetter': true,
       });
 
-      // Navigate to the login page
+      
       Navigator.of(context).push(
         MaterialPageRoute(builder: (context) => HomeScreen(email: widget.email,)),
       );
@@ -75,13 +75,13 @@ class _MailReplyState extends State<MailReply> {
       future: userData,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          // While data is being fetched, display a loading indicator
+          
           return CircularProgressIndicator();
         } else if (snapshot.hasError) {
-          // If there is an error, display an error message
+          
           return Text('Error: ${snapshot.error}');
         } else {
-          // If data is successfully fetched, use it in your UI
+          
           Map<String, dynamic> userData = snapshot.data?.data() ?? {};
 
           return Stack(
@@ -124,7 +124,7 @@ class _MailReplyState extends State<MailReply> {
                       child: TextFormField(
                         controller: responseController,
                         maxLines: null,
-                        maxLength: 250, // Set the maximum length to 200 characters
+                        maxLength: 250, 
                         decoration: InputDecoration(
                           hintText: 'Write your response...',
                           border: InputBorder.none,// Placeholder text
