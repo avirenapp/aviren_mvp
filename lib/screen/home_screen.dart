@@ -42,10 +42,10 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
   Future<void> updateUnixTimestamp() async {
-    // Retrieve the current user data
+    
     DocumentSnapshot<Map<String, dynamic>> snapshot =
     await FirebaseFirestore.instance.collection('users').doc(widget.email).get();
-      // Save DateTime and unixTimestamp only if openedLetter is false
+      
       DateTime now = DateTime.now();
       int unixTimestamp = now.toUtc().millisecondsSinceEpoch ~/ 1000;
 
@@ -73,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return WillPopScope(
       onWillPop: () async {
-        // Show the options dialog when the back button is pressed
+        
         showDialog(
           context: context,
           builder: (BuildContext context) {
@@ -110,14 +110,14 @@ class _HomeScreenState extends State<HomeScreen> {
                               actions: [
                                 TextButton(
                                   onPressed: () {
-                                    Navigator.of(context).pop(); // Cancel button
+                                    Navigator.of(context).pop(); 
                                   },
                                   child: Text('Cancel'),
                                 ),
                                 TextButton(
                                   onPressed: () async {
-                                    Navigator.of(context).pop(); // Close the confirmation dialog
-                                    await _logout(); // Logout the user
+                                    Navigator.of(context).pop(); 
+                                    await _logout(); 
                                   },
                                   child: Text('Logout'),
                                 ),
@@ -129,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       icon: Icon(Icons.logout,color: Colors.white,),
                       label: Text('Logout',style: TextStyle(color: Colors.white),),
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.black, // Red color
+                        primary: Colors.black,
                       ),
                     ),
                   ],
@@ -138,7 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
             );
           },
         );
-        // Return false to prevent the default back button behavior
+        
         return false;
       },
       child: FutureBuilder<DocumentSnapshot<Map<String, dynamic>>>(
@@ -218,10 +218,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     Align(
                       alignment: Alignment.topRight,
                       child: Padding(
-                        padding: EdgeInsets.only( top: 80,right: 5), // Add your desired padding values
+                        padding: EdgeInsets.only( top: 80,right: 5), 
                         child: GestureDetector(
                           onTap: () {
-                            // Show the options dialog when the options button is pressed
+                            
                             showDialog(
                               context: context,
                               builder: (BuildContext context) {
@@ -258,14 +258,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     actions: [
                                                       TextButton(
                                                         onPressed: () {
-                                                          Navigator.of(context).pop(); // Cancel button
+                                                          Navigator.of(context).pop(); 
                                                         },
                                                         child: Text('Cancel'),
                                                       ),
                                                       TextButton(
                                                         onPressed: () async {
-                                                          Navigator.of(context).pop(); // Close the confirmation dialog
-                                                          await _logout(); // Logout the user
+                                                          Navigator.of(context).pop(); 
+                                                          await _logout(); 
                                                         },
                                                         child: Text('Logout'),
                                                       ),
@@ -277,7 +277,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                             icon: Icon(Icons.logout,color: Colors.white,),
                                             label: Text('Logout',style: TextStyle(color: Colors.white),),
                                             style: ElevatedButton.styleFrom(
-                                              primary: Colors.black, // Red color
+                                              primary: Colors.black, 
                                             ),
                                           ),
                                         ],
