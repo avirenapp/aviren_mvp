@@ -264,7 +264,7 @@ class _RegistrationscreenState extends State<Registrationscreen> {
 
     return Stack(
         children: [
-          // Background Image
+          
           Image.asset(
             "assets/LOGIN9.png",
             fit: BoxFit.cover,
