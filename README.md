@@ -69,6 +69,9 @@ pip install firestore
 ![image](https://github.com/avirenapp/aviren_mvp/assets/48215209/3dbdcd9c-909a-45e5-a0cd-b082ef1e9091)
 
 - Host all the python files on a web hosting service or your local machine
+- Replace **REDACTED** on ``chatbot.py`` with the actual path to your ``service.json`` file
+![image](https://github.com/avirenapp/aviren_mvp/assets/48215209/f6a165e6-84dc-48e7-926d-d6e842ed7d24)
+
 - Replace **REDACTED** with ```HostURL/generate``` on the python file and botpage.dart
 ![image](https://github.com/avirenapp/aviren_mvp/assets/48215209/a435e8a8-327a-4f60-962a-d54c0a935479)
 ![image](https://github.com/avirenapp/aviren_mvp/assets/48215209/7077a549-6731-4856-b318-ea061a99ed85)
