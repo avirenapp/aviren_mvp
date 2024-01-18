@@ -44,38 +44,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBgd8n708vacYWP-dx4VjkGDLCX-MS8_Fo',
-    appId: '1:302361832417:web:efc49975d128949e7380a0',
-    messagingSenderId: '302361832417',
-    projectId: 'aviren-ff51f',
-    authDomain: 'aviren-ff51f.firebaseapp.com',
-    storageBucket: 'aviren-ff51f.appspot.com',
-    measurementId: 'G-94JRK3QCYJ',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    storageBucket: '',
+    measurementId: '',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC80GC3jdeH7ppxvUvVUrvEFwCchCV1Hc0',
-    appId: '1:302361832417:android:71c4c3deed3178547380a0',
-    messagingSenderId: '302361832417',
-    projectId: 'aviren-ff51f',
-    storageBucket: 'aviren-ff51f.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDoDtorbsZxOjLJjFaqudmgkb-EVVPFWMc',
-    appId: '1:302361832417:ios:5d0a02628cc401437380a0',
-    messagingSenderId: '302361832417',
-    projectId: 'aviren-ff51f',
-    storageBucket: 'aviren-ff51f.appspot.com',
-    iosBundleId: 'com.example.flutter1',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDoDtorbsZxOjLJjFaqudmgkb-EVVPFWMc',
-    appId: '1:302361832417:ios:288ff02e61971ec57380a0',
-    messagingSenderId: '302361832417',
-    projectId: 'aviren-ff51f',
-    storageBucket: 'aviren-ff51f.appspot.com',
-    iosBundleId: 'com.example.flutter1.RunnerTests',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
   );
 }
