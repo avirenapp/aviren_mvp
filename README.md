@@ -13,7 +13,7 @@ Inquiries: avirenapp@gmail.com
 - Terris Alvin - Hipster
 
 ## App Installation
-https://drive.google.com/file/d/13zlPhxFVMejGRYWzE1z_Ks5glhbSKs9y/view?usp=sharing
+https://drive.google.com/file/d/1qrU6FP35nr2b1QYXrG0Y7k5lIWH0EmPP/view?usp=sharing
 
 ## How to Run the Project
 ### Application
