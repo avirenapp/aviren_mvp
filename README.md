@@ -71,6 +71,14 @@ pip install firestore
 ![image](https://github.com/avirenapp/aviren_mvp/assets/48215209/a435e8a8-327a-4f60-962a-d54c0a935479)
 ![image](https://github.com/avirenapp/aviren_mvp/assets/48215209/7077a549-6731-4856-b318-ea061a99ed85)
 
+**Setting up ``check.py``**
+- Replace **/PATH/** with the actual path to your ``service.json`` file
+
+- Replace **REDACTED** with ```HostURL/generate``` (actual endpoint) on the python file
+
+- Host the ``check.py`` script either on a web hosting service or your local machine, ensuring that scheduled tasks are enabled to run the script at regular intervals of every X seconds
+
+  
 ## Application Demo
 ### Loading Page
 
