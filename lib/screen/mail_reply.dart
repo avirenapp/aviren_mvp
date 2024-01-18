@@ -124,10 +124,13 @@ class _MailReplyState extends State<MailReply> {
                       child: TextFormField(
                         controller: responseController,
                         maxLines: null,
-                        maxLength: 250, 
+                        maxLength: 250,
+                        onChanged: (text) {
+                          setState(() {});
+                        },
                         decoration: InputDecoration(
                           hintText: 'Write your response...',
-                          border: InputBorder.none,// Placeholder text
+                          border: InputBorder.none,
                         ),
                         style: TextStyle(fontSize: 20, fontFamily: 'CustomFont'),
                       ),
@@ -147,7 +150,12 @@ class _MailReplyState extends State<MailReply> {
                         child: Container(
                           width: 200,
                           child: ElevatedButton(
-                            onPressed: sendResponse,
+                            onPressed: responseController.text.isNotEmpty
+                                ? () {
+                              
+                              sendResponse();
+                            }
+                                : null,
                             style: ElevatedButton.styleFrom(
                               primary: Colors.white,
                             ),
