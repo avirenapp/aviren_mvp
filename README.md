@@ -4,6 +4,8 @@
 
 This is Aviren, an application designed to tackle the challenges of depression and suicide among younger generations. Our mission is to provide services that harness handcrafted models and personalize Language Learning Models to adapt to each user's unique behavioral patterns, ensuring a tailored approach to mental health support. Join us on the journey as we combine technology and passion to create a brighter future for the younger generations.
 
+Inquiries: avirenapp@gmail.com
+
 ## Team
 - Anders Willard Leo - Hacker
 - Brian Altan - Hustler
