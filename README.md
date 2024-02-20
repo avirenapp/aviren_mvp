@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://github.com/avirenapp/aviren_mvp/assets/48215209/d7d4c0bf-637f-496c-9efe-3f71605af818"></p>
 
-This is Aviren, an application designed to tackle the challenges of depression and suicide among younger generations. Our mission is to provide services that harness handcrafted models and personalize Language Learning Models to adapt to each user's unique behavioral patterns, ensuring a tailored approach to mental health support. Join us on the journey as we combine technology and passion to create a brighter future for the younger generations.
+This is Aviren, an application designed to tackle the challenges of depression and suicide among younger generations. Our mission is to provide services that harness handcrafted models and personalize Language Learning Models to adapt to each user's unique behavioral patterns, ensuring a tailored approach to mental health support. 
 
 Our mascot, Aviren, is a finely-tuned Gemini AI. Trained with mental health counseling dialogues, Aviren is trained to simulate a therapy session. We believe this approach humanizes the possibility for users to express themselves, providing a unique and personalized avenue for mental health support.
 
@@ -10,6 +10,7 @@ We're utilizing a finely-tuned Gemini AI to send our users a daily personalized 
 
 Here at Aviren, we ensure a thoughtful touch in every detail. This includes a custom-designed font to replicate a handwritten letter and custom-composed background music by our designer. Our mission is to utilize every element that contributes to a sense of safety and calmness within the user's experience.
 
+Join us on the journey as we combine technology and passion to create a brighter future for the younger generations.
 Inquiries: avirenapp@gmail.com
 
 ## Team
