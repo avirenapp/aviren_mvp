@@ -13,12 +13,13 @@ Here at Aviren, we ensure a thoughtful touch in every detail. This includes a cu
 Inquiries: avirenapp@gmail.com
 
 ## Team
-- Anders Willard Leo - Hacker
-- Brian Altan - Hustler
-- Kenneth Bryan - Hacker
-- Terris Alvin - Hipster
+- Anders Willard Leo - ML Engineer
+- Brian Altan - Project Lead
+- Kenneth Bryan - Mobile Developer
+- Terris Alvin - Asset Designer
 
 ## App Installation
+If you prefer to skip the hassle of setting up your own instance, we've got you covered. Everything is already hosted and ready to use.
 https://drive.google.com/file/d/1qrU6FP35nr2b1QYXrG0Y7k5lIWH0EmPP/view?usp=sharing
 
 ## How to Run the Project
